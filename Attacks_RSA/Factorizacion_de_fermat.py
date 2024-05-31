@@ -18,8 +18,3 @@ def fermat_factorization(n):
     q = a - b
 
     return int(p), int(q)
-
-
-n = 13*7  # Número a factorizar
-p, q = fermat_factorization(n)
-print(f'Los factores de {n} son {p} y {q}')

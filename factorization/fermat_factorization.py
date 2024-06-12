@@ -1,5 +1,4 @@
 import gmpy2
-from gmpy2 import mpz
 
 def fermat_factorization(n):
     if n % 2 == 0:

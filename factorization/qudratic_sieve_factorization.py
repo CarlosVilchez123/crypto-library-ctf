@@ -3,7 +3,7 @@ import math
 import numpy as np
 from sympy import Matrix
 
-def quadratic_sieve(n):
+def quadratic_sieve(n, Limite_de_la_base):
     def is_quadratic_residue(a, p):
         return pow(a, (p - 1) // 2, p) == 1
     
@@ -57,7 +57,7 @@ def quadratic_sieve(n):
                 return factor, n // factor
         return None
     
-    B = 1000000  # Limite de la base
+    B = Limite_de_la_base
     base = find_smooth_base(n, B)
     polynomials = generate_polynomials(n, base)
     smooth_numbers = find_smooth_numbers(n, base, polynomials)
@@ -72,8 +72,3 @@ def quadratic_sieve(n):
         return factors
     else:
         raise ValueError("No se encontraron factores.")
-
-
-n = 13*7  
-p, q = quadratic_sieve(n)
-print(f'Los factores de {n} son {p} y {q}')

@@ -1,4 +1,4 @@
-from factrizaciones.GCD_extends import extended_gcd
+from factorization.GCD_extends import extended_gcd
 
 def CRT(N_list_modules, list_rest):
     sum = 0

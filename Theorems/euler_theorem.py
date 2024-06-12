@@ -1,6 +1,6 @@
 from gmpy2 import *
-from Functions.euler_function import euler_function
-from factrizaciones.GCD_extends import extended_gcd
+from functions.euler_function import euler_function
+from factorization.GCD_extends import extended_gcd
 
 """
 Remember that the theorems only work if "a" and "n" are comprimes

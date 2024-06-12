@@ -1,4 +1,4 @@
-from factrizaciones.GCD_extends import *
+from factorization.GCD_extends import *
 def euler_function(n):
     numbers_coprimes = 1
     for i in range(2, n):
